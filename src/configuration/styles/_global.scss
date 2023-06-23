@@ -1,0 +1,69 @@
+body {
+  min-height: 100vh;
+
+  background-color: $background-color;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 16px;
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.MuiInputBase-input {
+  padding: 10px 32px 10px 16px;
+}
+
+.MuiInputBase-root:hover {
+  fieldset.MuiOutlinedInput-notchedOutline {
+    border-color: inherit !important;
+  }
+}
+
+.MuiInputBase-root.Mui-focused {
+  .MuiOutlinedInput-notchedOutline {
+    border-color: inherit !important;
+    border-width: 1px;
+  }
+}
