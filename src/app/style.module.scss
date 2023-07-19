@@ -1,0 +1,19 @@
+@import '../configuration/styles/variables';
+
+.main {
+  background-image: url('../configuration/images/main/background.jpg');
+  background-size: contain;
+
+  height: 100vh;
+}
+
+.wrapper {
+  padding-top: calc($header-width + 60px);
+}
+
+.form {
+  padding: 28px 24px;
+  width: fit-content;
+
+  background: #ffffffd9;
+}

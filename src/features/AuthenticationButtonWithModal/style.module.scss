@@ -1,0 +1,16 @@
+@import '../../configuration/styles/variables';
+
+.button {
+  min-width: 115px;
+
+  color: $basic-white;
+  border-color: #cecece;
+  background-color: #f1f3f626;
+
+  padding: 8px 16px;
+  margin-right: 30px;
+
+  &:hover {
+    border-color: $basic-white;
+  }
+}
