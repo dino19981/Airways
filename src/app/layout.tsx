@@ -1,6 +1,13 @@
-import { Inter } from 'next/font/google';
+import { Header } from '@/widgets/Header/Header';
+import { Roboto } from 'next/font/google';
+import '../configuration/styles/main.scss';
+import { Providers } from '@/configuration/Providers/Providers';
 
-const inter = Inter({ subsets: ['latin'] });
+const roboto = Roboto({
+  weight: '400',
+  style: 'normal',
+  subsets: ['cyrillic', 'latin'],
+});
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,7 +17,13 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={roboto.className}>
+        <Providers>
+          <Header />
+
+          <main> {children}</main>
+        </Providers>
+      </body>
     </html>
   );
 }

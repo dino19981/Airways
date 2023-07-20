@@ -1,0 +1,15 @@
+@import '../../configuration/styles/variables';
+
+.select {
+  color: $basic-white;
+  background-color: #f1f3f626;
+  margin-right: 40px;
+
+  fieldset {
+    border-color: #cecece;
+  }
+
+  svg {
+    color: $basic-white;
+  }
+}
