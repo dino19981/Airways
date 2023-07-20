@@ -1,0 +1,59 @@
+@import '../../configuration/styles/variables';
+
+.wrapper {
+  width: 580px;
+}
+
+.radioButtons {
+  gap: 40px;
+}
+
+.airportSelectorsWrapper {
+  margin-top: 25px;
+  position: relative;
+}
+
+.radio span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #11397e;
+}
+
+.inputWrapper {
+  background-color: #f4f6f9;
+  padding: 8px 16px;
+
+  border: 1px solid #a8a9ab;
+  border-radius: 5px;
+
+  &:last-child {
+    margin-top: 4px;
+  }
+}
+
+.reverseIcon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid #a8a9ab;
+  border-radius: 50%;
+  padding: 12px;
+
+  transform: translate(0, -50%);
+}
+
+.input {
+  div {
+    &::after {
+      border: none !important;
+    }
+    &::before {
+      border: none !important;
+    }
+  }
+}
